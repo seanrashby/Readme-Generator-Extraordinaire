@@ -1,7 +1,7 @@
 # Super Project
 ![](https://img.shields.io/badge/license-MIT%20License-blue?style=flat-square)
 ## Description
-A project to save the world 
+A project to save the world :)
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -15,13 +15,13 @@ A project to save the world
 2. npm i fs
 
 ## Usage
-Use it baby :)
+Have at it :)
 
 ## Contribution
-Contribute if you want :)
+Just be cool about it :)
 
 ## Tests
-npm test probably ngl
+npm test probably 
 
 ## License
 This project is convered under the MIT License.
