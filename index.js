@@ -103,7 +103,7 @@ function createREADMEFile(input) {
     completeREADME.push(badge);
     
     
-    // Adding description
+    // description
     if (input.description == '') {
         readmeDescription = `${descriptionHead}\n Enter project description here.`;
     } else {
@@ -112,12 +112,12 @@ function createREADMEFile(input) {
     completeREADME.push(readmeDescription);
     
     
-    //Adding Table of Contents
+    //template literal for table of contents 
     tableOfContents = `${tocHead}\n* [Installation](#installation)\n* [Usage](#usage)\n* [Contribution](#contribution)\n* [Tests](#tests)\n* [License](#license)\n* [Questions](#questions)\n`;
     completeREADME.push(tableOfContents);
     
     
-    //Adding installation instructions
+    //installation template literal
     completeREADME.push(`${installHead}`);
     
     installArr = input.install.split(',').map(item => {
@@ -161,16 +161,16 @@ function createREADMEFile(input) {
     completeREADME.push(readmeLicence);
     
     
-    //Questions section with github link
+    //Questions github link
     readmeQuestions = `\n${questionsHead}\nFor questions about this project, please see my GitHub at [${input.github}](https://github.com/${input.github}), or reach out by email at ${input.email}.`;
     completeREADME.push(readmeQuestions);
     
     
-    //Joining the created README Array with a newline separator
+    //Joining the created README Array w/separator
     const README = completeREADME.join('\n');
         
     
-    //Creating the README
+    //Creating the README :)
     fs.writeFile("./utils/generateReadme.md", README, (err) => {
         if (err) {
             throw err;
